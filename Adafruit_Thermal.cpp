@@ -396,6 +396,10 @@ void Adafruit_Thermal::flush() {
   writeBytes(ASCII_FF);
 }
 
+void Adafruit_Thermal::cutPaper() {
+  writeBytes(ASCII_GS, 'V', 1);
+}
+
 void Adafruit_Thermal::setSize(char value){
   uint8_t size;
 

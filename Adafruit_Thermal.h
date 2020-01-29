@@ -130,6 +130,7 @@ class Adafruit_Thermal : public Print {
     begin(uint8_t heatTime=120),
     boldOff(),
     boldOn(),
+    cutPaper(),
     doubleHeightOff(),
     doubleHeightOn(),
     doubleWidthOff(),
